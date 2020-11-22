@@ -46,7 +46,9 @@ def get_ndp_on_event ():
         counter += 1
 
         
-        print("NDP event %s found"%counter)
+        
+        print("%s NDP event found"%id)
+
 
 
    

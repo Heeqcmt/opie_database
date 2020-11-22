@@ -8,6 +8,7 @@ table = db.Table('Events')
 
 event_list = ontario_combine.combined()
 
+counter = 1
 with table.batch_writer() as batch:
     for event in event_list:
         batch.put_item(Item={
@@ -21,3 +22,5 @@ with table.batch_writer() as batch:
                 "location":event.location
         }
         })
+        print("%s event added"%counter)
+        counter += 1
