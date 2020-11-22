@@ -1,8 +1,9 @@
 import ontario_ndp
 import ontario_pc
+import ontario_lib
 
 def combined():
-    event_list_final = ontario_ndp.get_ndp_on_event() + ontario_pc.get_on_pc_event()
+    event_list_final = ontario_ndp.get_ndp_on_event() + ontario_pc.get_on_pc_event() + ontario_lib.get_on_lib_event()
 
     #reshuffle the id 
     counter = 0
